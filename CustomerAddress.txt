@@ -1,0 +1,11 @@
+create table CustomerAddress(
+CustomerId int(5) not null AUTO_INCREMENT ,
+AddressLine1 varchar(20) not null,
+AddressLine2 varchar(20) not null,
+State varchar(20) not null,
+Country varchar(20) not null,
+Pincode varchar(10) not null,
+Phone varchar(15) not null,
+isbillingAddress boolean not null,
+CreationDate date not null,
+foreign key(CustomerId) references Customer(CustomerId));
